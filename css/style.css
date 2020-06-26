@@ -1,0 +1,51 @@
+/*basic css reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+
+/*main container holding page*/
+section.hero_section{
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/hero.jpg');background-position: top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    background-attachment: fixed; 
+}
+p.hero_header{
+    font-size: 2.25rem;
+}
+p.hero_header{
+    text-align: center;
+}
+div.hero_btn-holder{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+button.hero_btn-portfolio,
+button.hero_btn-hire{
+    border-radius: 1.5rem;
+    outline: none !important;
+}
+button.hero_btn-portfolio:hover{
+    color: #fff;
+    background-color: transparent !important;
+    border: 2px solid #fff !important;    
+}
+button.hero_btn-hire{
+    background-color: transparent !important;
+    border: 2px solid #fff;
+}
+button.hero_btn-hire:hover{
+    background-color: #fff !important;
+    color: #000 !important;
+}
