@@ -52,21 +52,47 @@ button.hero_btn-hire:hover{
 }
 
 /*MEDIA QUERIES */
+
 /*for tablet*/
 @media (orientation :landscape), (min-width:768px ){
   section.hero_section{
-    height: 50vh;
+    height: 75vh;
     overflow: hidden;
     position :relative ;
   }
   header.main_header{
     position :absolute ;
-    top :5%;
-    display:grid;
-    grid-template-columns:repeat(5, 1fr);
-    justify-content :center ;
-    align-content: center ;
+    top :5% !important;
+    position:absolute;
     margin: 0 auto !important ;
     min-width: 80%!important ;
+  }
+  abo{
+      padding-bottom: -50rem !important;
+  }
+  section.m-about{
+      display:none;
+  }
+  section.about{
+      position: absolute;
+      top:90%;
+      width: 70%;
+      left:50%;
+      margin-left: -35%;
+      background: #fff;
+      height: auto;
+      z-index: 20;
+  }
+  div.left_about{
+      height: 4.2rem;
+      background: #e5e5e5;
+      width: 100%;
+  }
+  div.left_about > p{
+      width: 100%;
+      height: 100%;
+  }
+  section.m-projects{
+      display: none;
   }
 }
