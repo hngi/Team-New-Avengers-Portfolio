@@ -50,4 +50,23 @@ button.hero_btn-hire:hover{
     background-color: #fff !important;
     color: #000 !important;
 }
-/*about section */
+
+/*MEDIA QUERIES */
+/*for tablet*/
+@media (orientation :landscape), (min-width:768px ){
+  section.hero_section{
+    height: 50vh;
+    overflow: hidden;
+    position :relative ;
+  }
+  header.main_header{
+    position :absolute ;
+    top :5%;
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    justify-content :center ;
+    align-content: center ;
+    margin: 0 auto !important ;
+    min-width: 80%!important ;
+  }
+}
