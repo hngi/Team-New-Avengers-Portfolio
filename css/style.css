@@ -6,20 +6,20 @@
 }
 body{
     min-height: 100vh;
+    background :#e5e5e5 ;
+    
 }
 
 /*main container holding page*/
 section.hero_section{
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/hero.jpg');background-position: top;
+    object-fit: cover ;
+    background-size: cover ;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/hero.jpg');
+    background-position: top;
     background-repeat: no-repeat;
     height: 70vh;
     overflow: hidden;
-    object-fit: fill;
-    background-attachment: fixed; 
+   
 }
 p.hero_header{
     font-size: 1.85rem;
@@ -50,38 +50,60 @@ button.hero_btn-hire:hover{
     background-color: #fff !important;
     color: #000 !important;
 }
+button.first_ab:hover{
+  color :#000!important ;
+  background-color: transparent !important;
+  border: 2px solid #000 !important;    
+  outline :none ;
+}
+button.second_ab:hover{
+  color :#fff!important ;
+  background :#555 !important ;
+  
+}
 
 /*MEDIA QUERIES */
 
 /*for tablet*/
 @media (orientation :landscape), (min-width:768px ){
   section.hero_section{
-    height: 75vh;
+    height:60rem;
     overflow: hidden;
-    position :relative ;
+    position  :relative ;
+    
   }
-  header.main_header{
-    position :absolute ;
+  div.main_header{
     top :5% !important;
     position:absolute;
-    margin: 0 auto !important ;
-    min-width: 80%!important ;
+    left:50%;
+   margin-left: -40% !important ;
+    width: 80%!important ;
+    height: 4.2rem;
   }
-  abo{
-      padding-bottom: -50rem !important;
+  div.hero_content,
+  div.hero_btn-holder{
+      margin-left: 8rem !important;
   }
-  section.m-about{
+  section.m-about,
+  section.m-projects,
+  section.m-testimonials,
+  section.m-chat,
+  footer.m-footer{
       display:none;
   }
   section.about{
       position: absolute;
-      top:90%;
+      top:65%;
       width: 70%;
       left:50%;
       margin-left: -35%;
       background: #fff;
-      height: auto;
+      height:auto;
       z-index: 20;
+  }
+  img.about_model{
+    width :8rem;
+    height :auto ;
   }
   div.left_about{
       height: 4.2rem;
@@ -94,5 +116,10 @@ button.hero_btn-hire:hover{
   }
   section.m-projects{
       display: none;
+  }
+  div.projects_tab p:hover{
+    border :1px solid #000 ;
+    cursor: pointer ;
+    border-radius :1.25rem ;
   }
 }
