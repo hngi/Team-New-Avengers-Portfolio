@@ -16,15 +16,14 @@ section.hero_section{
     background-size: contain;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/hero.jpg');background-position: top;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 70vh;
     overflow: hidden;
+    object-fit: fill;
     background-attachment: fixed; 
 }
 p.hero_header{
-    font-size: 2.25rem;
-}
-p.hero_header{
-    text-align: center;
+    font-size: 1.85rem;
+    text-align: center ;
 }
 div.hero_btn-holder{
     display: grid;
@@ -32,9 +31,11 @@ div.hero_btn-holder{
     grid-gap: 1rem;
 }
 button.hero_btn-portfolio,
-button.hero_btn-hire{
+button.hero_btn-hire,
+button.btn_cv{
     border-radius: 1.5rem;
     outline: none !important;
+    font-size:0.75rem ;
 }
 button.hero_btn-portfolio:hover{
     color: #fff;
@@ -49,3 +50,4 @@ button.hero_btn-hire:hover{
     background-color: #fff !important;
     color: #000 !important;
 }
+/*about section */
