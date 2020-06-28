@@ -6,7 +6,7 @@
 }
 body{
     min-height: 100vh;
-    background :#e5e5e5 ;
+    background :#fff ;
     
 }
 
@@ -67,25 +67,30 @@ section.about,
   section.skills,
   div.main_header,
   .tme,
- .d-inline{
+ .d-inline,
+ section#skills{
       display:none !important;
   }
 
 /*MEDIA QUERIES */
 
 /*for tablet*/
-@media (orientation :landscape), (min-width:768px ){
+@media (min-width:768px ){
+  body{
+    min-height: 100vh;
+    background :#e5e5e5 ;
+    
+}
   section.about,
   section.projects,
   section.testimonials,
   section.skills,
   .tme,
- .d-inline{
+ .d-inline,
+ section#skills{
       display:block !important;
-  }
-  div.main_header{
-    display: flex!important ;
-  }
+ }
+  
   section.hero_section{
     height:60rem;
     overflow: hidden;
@@ -96,9 +101,10 @@ section.about,
     top :5% !important;
     position:absolute;
     left:50%;
-   margin-left: -40% !important ;
-    width: 80%!important ;
+   margin-left: -30% !important ;
+    width: 60%!important ;
     height: 4.2rem;
+    display: flex!important ;
   }
   div.hero_content,
   div.hero_btn-holder{
@@ -154,12 +160,14 @@ section.about,
   div.carousel{
     padding: 5rem 0;
   }
-  div.carousel-inner{
-    margin-bottom :500rem;
-    margn-top :1rem ;
-  }
+  
+  
  a.tme img{
    width :4rem;
    height: auto ;
  }
+ section#skills > p{
+   padding-left:5rem !important ;
+ }
 }
+
