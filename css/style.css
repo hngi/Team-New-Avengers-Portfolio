@@ -61,11 +61,31 @@ button.second_ab:hover{
   background :#555 !important ;
   
 }
+section.about,
+  section.projects,
+  section.testimonials,
+  section.skills,
+  div.main_header,
+  .tme,
+ .d-inline{
+      display:none !important;
+  }
 
 /*MEDIA QUERIES */
 
 /*for tablet*/
 @media (orientation :landscape), (min-width:768px ){
+  section.about,
+  section.projects,
+  section.testimonials,
+  section.skills,
+  .tme,
+ .d-inline{
+      display:block !important;
+  }
+  div.main_header{
+    display: flex!important ;
+  }
   section.hero_section{
     height:60rem;
     overflow: hidden;
@@ -90,8 +110,7 @@ button.second_ab:hover{
   section.m-about,
   section.m-projects,
   section.m-testimonials,
-  section.m-chat,
-  footer.m-footer{
+  .mme{
       display:none;
   }
   section.about{
@@ -132,9 +151,15 @@ button.second_ab:hover{
       width: 3rem;
       height: auto;
   }
-
   div.carousel{
-    margin-bottom: 5rem!important;
-    margin-top: 5rem!important;
+    padding: 5rem 0;
   }
+  div.carousel-inner{
+    margin-bottom :500rem;
+    margn-top :1rem ;
+  }
+ a.tme img{
+   width :4rem;
+   height: auto ;
+ }
 }
