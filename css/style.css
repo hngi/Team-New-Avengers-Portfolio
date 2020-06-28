@@ -14,8 +14,8 @@ body{
 section.hero_section{
     object-fit: cover ;
     background-size: cover ;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/hero.jpg');
-    background-position: top;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/Rectangle\ 2\ \(1\).jpg');
+    background-position: center;
     background-repeat: no-repeat;
     height: 70vh;
     overflow: hidden;
@@ -84,6 +84,9 @@ button.second_ab:hover{
   div.hero_btn-holder{
       margin-left: 8rem !important;
   }
+  p.hero_header{
+    text-align: left !important;
+  }
   section.m-about,
   section.m-projects,
   section.m-testimonials,
@@ -121,5 +124,17 @@ button.second_ab:hover{
     border :1px solid #000 ;
     cursor: pointer ;
     border-radius :1.25rem ;
+  }
+  div.service1{
+      line-height: 0.9;
+  }
+  div.service1 img{
+      width: 3rem;
+      height: auto;
+  }
+
+  div.carousel{
+    margin-bottom: 5rem!important;
+    margin-top: 5rem!important;
   }
 }
