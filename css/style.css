@@ -7,14 +7,14 @@
 body{
     min-height: 100vh;
     background :#fff ;
-    
+    width: 1440px!important ;
 }
 
 /*main container holding page*/
 section.hero_section{
     object-fit: cover ;
     background-size: cover ;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/Rectangle\ 2\ \(1\).jpg');
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/Iphone6.jpg');
     background-position: center;
     background-repeat: no-repeat;
     height: 70vh;
@@ -68,12 +68,26 @@ section.about,
   div.main_header,
   .tme,
  .d-inline,
- section#skills{
+ section#skills,
+ div.remove{
       display:none !important;
   }
 
 /*MEDIA QUERIES */
+/*background images */
+@media (min-width:468px){
+  section.hero_section{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/Iphone-lg.jpg');
+  }
+}
 
+@media (min-width:992px){
+  section.hero_section{
+    object-fit :cover ;
+    background-repeat :no-repeat ;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/Iphone-xxl.jpg');
+  }
+}
 /*for tablet*/
 @media (min-width:768px ){
   body{
@@ -95,7 +109,6 @@ section.about,
     height:60rem;
     overflow: hidden;
     position  :relative ;
-    
   }
   div.main_header{
     top :5% !important;
@@ -166,8 +179,22 @@ section.about,
    width :4rem;
    height: auto ;
  }
- section#skills > p{
-   padding-left:5rem !important ;
+ section#skills{
+   display:one!important ;
  }
+ 
 }
 
+/*larger screens */
+@media (min-width :997px){
+  section#skills{
+    display :block !important ;
+  }
+  section#skills > p{
+   padding-left:5rem !important ;
+ }
+ div.carousel-item{
+   border :10px solid #02507F!important ;
+   background :#02507F!important ;
+ }
+}
