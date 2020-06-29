@@ -1,0 +1,597 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+*:focus{
+    outline-style: none;
+}
+.w-40{
+    width: 40%;
+}
+.w-60{
+    width: 60%;
+}
+.fw-bold{
+    font-weight: bold;
+}
+.py-1{
+    padding: 10px 0;
+}
+.my-2{
+    margin: 20px 0;
+}
+.fs-22{
+    font-size: 22px;
+}
+.color-blue{
+    color: #3D85CC;
+}
+.size-small{
+    width: 100px!important;
+    height: 100px!important;
+}
+.just-center{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:visited, a:hover, a:focus, a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
+section.head{
+    position: relative;
+    background-color: #e5e5e5;
+}
+nav{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    font-weight: bold;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+#logo{
+    content: url("../images/logo.svg");
+    margin-right: 10px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+ul li {
+    padding: 0 30px;
+}
+.bars{
+    display: none;
+}
+.hire{
+    padding: 10;
+}
+.hire button{
+    border-radius: 50px;
+    text-align: center;
+    border: 2px solid #3D85CC;
+    padding: 5px 20px;
+    font-weight: bold;
+}
+.hire button:hover{
+    background-color: #3D85CC;
+    color: #fff;
+}
+header{
+    display: flex;
+    padding: 50px;
+    font-weight: bold;
+    font-size: 24px;
+}
+header > div{
+    width: 50%;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+}
+.intro > div:first-of-type{
+    font-size: 48px;
+}
+.contact-me{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.contact-btn{
+    border: none;
+    border-radius: 100px;
+    padding: 10px 20px;
+    background-color: #3D85CC;
+    color: #fff;
+    font-size: 20px;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social-icons span{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+.be{
+    content: url("../images/be.svg");
+}
+.dribbble{
+    content: url("../images/dribbble.svg");
+}
+.fb-colored{
+    content: url("../images/fb-colored.svg");
+}
+
+.image-container{
+    display: flex;
+    justify-content: flex-end;
+}
+.image{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    content: url("../images/main-photo.png");
+}
+
+
+section#apps, section#blog, section#stories{
+    padding: 30px 50px;
+}
+section#apps > .app-title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.app-title span{
+    padding: 0 10px;
+    font-weight: bold;
+}
+.app-title span:last-of-type{
+    color: #858585;
+}
+
+.container > div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.card-curry{
+    width: 48%;
+    height: 400px;
+    background-image: url("../images/curry.png");
+    background-size: cover;
+    position: relative;
+    border-radius: 11px;
+}
+
+.card-eirene{
+    width: 48%;
+    height: 400px;
+    background-image: url("../images/eirene.png");
+    background-size: cover;
+    position: relative;
+    border-radius: 11px;
+}
+
+.card-imprint{
+    width: 48%;
+    height: 400px;
+    background-image: url("../images/imprint.png");
+    background-size: cover;
+    position: relative;
+    border-radius: 11px;
+}
+
+.card-reverie{
+    width: 48%;
+    height: 400px;
+    background-image: url("../images/reverie.png");
+    background-size: cover;
+    position: relative;
+    border-radius: 11px;
+}
+
+.card-details{
+    width: 100%;
+    height: 72px;
+    background-color: #edefed;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+    /* padding: 0 10px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-details .card-title{
+    margin-left: 20px;
+}
+.card-details > div:last-of-type{
+    margin-right: 20px;
+}
+.card-title > div:first-of-type{
+    font-size: 18px;
+}
+.card-title > div:last-of-type{
+    font-size: 12px;
+}
+.option{
+    width: 8px;
+    content: url("../images/option.svg");
+}
+
+.blog-title{
+    text-align: center;
+    color: #858585;
+    font-size: 36px;
+    margin: 50px 0;
+}
+
+.blog-content > div:first-of-type, .blog-content > div:last-of-type{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.blog-content-message{
+    width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.newsletter{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.newsletter > div {
+    height: 50px;
+}
+.subscribe button{
+    padding: 14px 20px;
+    border: 1px solid #3D85CC;
+    background-color: #3D85CC;
+    color: #fff;
+    border-radius: 0 30px 30px 0;
+    font-size: 20px;
+}
+.email input{
+    height: 51px;
+    padding-left: 10px;
+    font-size: 28px;
+    border: 1px solid #858585;
+    border-right: none;
+    border-radius: 30px 0 0 30px;
+}
+.email input::placeholder{
+    font-size: 20px;
+    padding-left: 10px;
+}
+.subscribe button{
+    border: none;
+}
+
+.blog-content > div:last-of-type{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 45%;
+    height: 500px;
+    position: relative;
+    border: 1px solid #a7a7a7;
+    border-radius: 20px;
+}
+
+.card-image-daily{
+    height: 428px;
+    background-image: url("../images/daily-lives.png");
+    background-size: cover;
+}
+.card-image-design{
+    height: 428px;
+    background-image: url("../images/design-thinking.png");
+    background-size: cover;
+}
+.card .card-details{
+    background-color: #fff;
+    border-radius: 0 0 30px 30px;
+}
+.more-content{
+    text-align: center;
+}
+.more-content button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #3D85CC;
+    color: #fff;
+    background-color: #3D85CC;
+}
+
+section#stories > div{
+    background-color: #e5e5e5;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.ceo-photo{
+    width: 250px;
+    content: url("../images/ceo-photo.png");
+}
+
+section#stories > div > div:first-of-type{
+    display: flex;
+    justify-content: center;
+}
+
+section#stories > div > div:last-of-type{
+    font-size: 24px;
+}
+
+.ceo-name{
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+footer{
+    color: #fff;
+    padding: 30px 50px;
+    background-color: #3D85CC;
+    text-align: center;
+}
+
+.social-icons-2{
+    padding-top: 10px;
+}
+
+.social-icons-2 span{
+    width: 24px;
+    height: 24px;
+    padding: 0 10px;
+}
+
+.phone{
+    content: url("../images/phone.svg");
+}
+.facebook{
+    content: url("../images/facebook.svg");
+}
+.twitter{
+    content: url("../images/twitter.svg");
+}
+.mail{
+    content: url("../images/mail.svg");
+}
+
+
+@media (max-width: 768px){
+    .w-100{
+        width: 100%;
+    }
+    .my-md-2{
+        margin: 20px 0;
+    }
+
+    .bars{
+        display: block;
+    }
+    .bar1, .bar2, .bar3{
+        width: 35px;
+        height: 5px;
+        background-color: #3D85CC;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    
+    .change .bar1{
+    transform: rotate(-45deg) translate(-9px,6px);
+    }
+    .change .bar2{
+        opacity: 0;
+    }
+
+    .change .bar3{
+        transform: rotate(45deg) translate(-8px,-8px);
+    }
+    nav > div:last-of-type{
+        margin: 0 50px;
+        width: 35px;
+        height: 35px;        
+    }
+    ul{
+        display: none;
+        background-color: #f1f1f1;
+    }
+    .change ul{
+        display: block;
+        position: absolute;
+        height: 155px;
+        width: 100%;
+        top: 72px;
+        left: 0;
+        text-align: right;
+    }
+    .change ul li {
+        padding: 5px 50px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    header{
+        flex-direction: column-reverse;
+    }
+    header > div{
+        width: 100%;
+    }
+    div.image-container{
+        justify-content: center;
+    }
+    div.image{
+        width: 300px;
+        height: 300px;
+    }
+    header > div:first-of-type{
+        margin-top: 30px;
+    }
+    .intro{
+        flex-direction: row;
+        padding: 10px 0;
+    }
+    .intro > div:last-of-type {
+        padding-left: 10px;
+    }
+    .social-icons{
+        justify-content: space-between;
+    }
+    .container > div{
+        flex-direction: column;
+    }
+    .container > div > div{
+        width: 100%;
+    }
+    .container > div > div:first-of-type{
+        margin-bottom: 50px;
+    }
+
+    .blog-content-message, .card-details > div:last-of-type{
+        font-weight: bold;
+    }
+    .blog-content-message {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .newsletter {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .email, .subscribe{
+        margin: 20px;
+    }
+    .email input{
+        border-right: 1px solid #a7a7a7;
+        border-radius: 30px;
+    }
+    .subscribe, .email{
+        display: flex;
+        justify-content: center;
+    }
+    .subscribe button{
+        border-radius: 30px;
+    }
+
+    .blog-content > div:last-of-type{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+    .card:first-of-type{
+        margin-bottom: 50px;
+    }
+
+    #stories > div{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    section#apps, section#blog, section#stories{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    nav > div{
+        padding: 0;
+    }
+    .logo{
+        padding: 0 0 0 50px;
+    }
+    .image{
+        width: 250px!important;
+        height: 250px!important;
+    }
+    .intro > div:first-of-type{
+        font-size: 38px;
+    }
+    .intro > div:last-of-type{
+        font-size: 20px;
+        margin: 15px 0;
+    }
+    header{
+        font-size: 20px;
+    }
+
+    .app-title {
+        margin-bottom: 30px!important;
+    }
+    .container > div{
+        margin-top: 30px;
+    }
+    .container > div > div:first-of-type{
+        margin-bottom: 30px;
+    }
+
+    .card:first-of-type, .blog-title, .blog-content > div:first-of-type, .blog-content > div:last-of-type{
+        margin: 30px 0;
+    }
+
+    .card-curry, .card-eirene, .card-imprint, .card-reverie {
+        height: 300px;
+    }
+    .option{
+        width: 5px;
+    }
+    .card {
+        height: 300px;
+    }
+    .card-image-daily, .card-image-design{
+        height: 228px;
+    }
+    section#stories > div > div:last-of-type{
+        font-size: 18px;
+    }
+    .ceo-photo{
+        width: 150px;
+    }
+    div.image{
+        width: 150px!important;
+        height: 150px!important;
+    }
+    .email input{
+        width: 280px;
+        height: 40px;
+        padding-left: 0;
+        font-size: 16px;
+    }
+    .email input::placeholder{
+        text-align: center;
+        font-size: 16px;
+    }
+}
