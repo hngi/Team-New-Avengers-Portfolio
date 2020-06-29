@@ -1,0 +1,201 @@
+/*basic css reset*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  background :#fff ;
+  
+}
+
+/*main container holding page*/
+section.hero_section{
+  object-fit: cover ;
+  background-size: contain ;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/Iphone6.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  overflow: hidden;
+ 
+}
+p.hero_header{
+  font-size: 1.85rem;
+  text-align: center ;
+}
+div.hero_btn-holder{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+button.hero_btn-portfolio,
+button.hero_btn-hire,
+button.btn_cv{
+  border-radius: 1.5rem;
+  outline: none !important;
+  font-size:0.75rem ;
+}
+button.hero_btn-portfolio:hover{
+  color: #fff;
+  background-color: transparent !important;
+  border: 2px solid #fff !important;    
+}
+button.hero_btn-hire{
+  background-color: transparent !important;
+  border: 2px solid #fff;
+}
+button.hero_btn-hire:hover{
+  background-color: #fff !important;
+  color: #000 !important;
+}
+button.first_ab:hover{
+color :#000!important ;
+background-color: transparent !important;
+border: 2px solid #000 !important;    
+outline :none ;
+}
+button.second_ab:hover{
+color :#fff!important ;
+background :#555 !important ;
+
+}
+section.about,
+section.projects,
+section.testimonials,
+section.skills,
+div.main_header,
+.tme,
+.d-inline,
+section#skills,
+div.remove{
+    display:none !important;
+}
+
+/*MEDIA QUERIES */
+
+/*for tablet*/
+@media (min-width:768px ){
+body{
+  min-height: 100vh;
+  background :#e5e5e5 ;
+  
+}
+section.about,
+section.projects,
+section.testimonials,
+section.skills,
+.tme,
+.d-inline,
+section#skills{
+    display:block !important;
+}
+
+section.hero_section{
+  height:60rem;
+  overflow: hidden;
+  position  :relative ;
+}
+div.main_header{
+  top :5% !important;
+  position:absolute;
+  left:50%;
+ margin-left: -30% !important ;
+  width: 60%!important ;
+  height: 4.2rem;
+  display: flex!important ;
+}
+div.hero_content,
+div.hero_btn-holder{
+    margin-left: 8rem !important;
+}
+p.hero_header{
+  text-align: left !important;
+}
+section.m-about,
+section.m-projects,
+section.m-testimonials,
+.mme{
+    display:none;
+}
+section.about{
+    position: absolute;
+    top:65%;
+    width: 70%;
+    left:50%;
+    margin-left: -35%;
+    background: #fff;
+    height:auto;
+    z-index: 20;
+}
+img.about_model{
+  width :8rem;
+  height :auto ;
+}
+div.left_about{
+    height: 4.2rem;
+    background: #e5e5e5;
+    width: 100%;
+}
+div.left_about > p{
+    width: 100%;
+    height: 100%;
+}
+section.m-projects{
+    display: none;
+}
+div.projects_tab p:hover{
+  border :1px solid #000 ;
+  cursor: pointer ;
+  border-radius :1.25rem ;
+}
+div.service1{
+    line-height: 0.9;
+}
+div.service1 img{
+    width: 3rem;
+    height: auto;
+}
+div.carousel{
+  padding: 5rem 0;
+}
+
+
+a.tme img{
+ width :4rem;
+ height: auto ;
+}
+section#skills{
+ display:one!important ;
+}
+
+}
+
+/*larger screens */
+@media (min-width :997px){
+section#skills{
+  display :block !important ;
+}
+section#skills > p{
+ padding-left:5rem !important ;
+}
+
+}
+
+/*background images */
+@media (min-width:468px){
+  section.hero_section{
+    background-position: center !important;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/Iphone-lg.jpg');
+  }
+  }
+  
+  @media (min-width:992px){
+  section.hero_section{
+    object-fit :cover ;
+    background-size: auto;
+    background-repeat :no-repeat ;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/Iphone-xxl.jpg');
+  }
+  }
