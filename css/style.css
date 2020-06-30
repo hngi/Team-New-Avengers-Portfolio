@@ -6,7 +6,7 @@ html {
 
 /* ***** Header styles ******  */
 header {
-  background: url('../images/Hero.png') rgba(0, 0, 0, 0.7);
+  background: url('../images/jpegs/hero.jpg') rgba(0, 0, 0, 0.7);
   background-size: cover;
   background-blend-mode: multiply;
   background-position: center center;
@@ -82,7 +82,7 @@ a.btn:hover {
 
 @media (max-width: 767px) {
   header {
-    background-image: url('../images/grayscale-photo-of-man-looking-up-3031391.jpg') ;
+    background-image: url('../images/jpegs/grayscale_photo_of_m_G64P9.jpg') ;
     filter: brightness(1);
   }
 
@@ -90,9 +90,14 @@ a.btn:hover {
     margin-top: 240px;
   }
 
+  .header-socials > img {
+    cursor: pointer;
+  }
+
   nav {
     background-color: #202020;
     padding-top: 0% !important;
+    max-width: 1440px !important;
   }
   
   h1 {
@@ -330,6 +335,10 @@ nav li a {
   margin-bottom: 33px;
 }
 
+.about-me-socials {
+  cursor: pointer;
+}
+
 @media (max-width: 997px) {
 
 }
@@ -460,6 +469,7 @@ nav li a {
   max-width: 100%;
   position: relative;
   right: 0;
+  
 }
 
 .slider-mobile img {
@@ -493,8 +503,10 @@ nav li a {
   margin-bottom: 88px;
 }
 
-.slider-bottom {
-
+@media (min-width: 1441px) {
+  .slider-mobile {
+    max-width: 1440px;
+  }
 }
 
 
@@ -551,6 +563,7 @@ nav li a {
   color: #202020;
   margin-bottom: 63px;
 }
+
 
 @media (max-width: 767px) {
   .same-h2 {
@@ -617,7 +630,9 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1440px !important;
 }
+
 
 footer h3 {
   font-family: 'Playfair Display', serif;
@@ -645,6 +660,14 @@ footer a {
 
 .desktop-links {
   display: block;
+  cursor: pointer;
+}
+
+@media (min-width: 1450px) {
+  .footer-wrapper {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -660,6 +683,7 @@ footer a {
     flex-direction: column;
     width: 100%;
     margin-bottom: 143px;
+    cursor: pointer;
   }
 
   .footer-wrapper {
