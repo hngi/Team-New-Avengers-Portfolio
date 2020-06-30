@@ -18,26 +18,26 @@ body {
     color: #FF0000;
 }
 
-.btn-orange {
-    background: #FF0000;
-    border: 1px solid #FF0000;
+.btn {
     border-radius: 5px;
     color: #ffffff;
     padding: 12px 25px;
 }
 
+.btn-orange {
+    background: #FF0000;
+    border: 1px solid #FF0000;
+}
+
 .btn-orange:hover {
     background: #1B1B1B;
-    color: #ffffff;
     border: 1px solid #FFFFFF;
+    color: #ffffff;
 }
 
 .btn-black {
     background: #1B1B1B;
     border: 1px solid #FFFFFF;
-    border-radius: 5px;
-    color: #ffffff;
-    padding: 12px 25px;
 }
 
 .btn-black:hover {
@@ -56,7 +56,6 @@ body {
 
 .header-section {
     margin-top: 2rem;
-    margin-bottom: 3rem;
 }
 
 .header-section_upper {
@@ -77,17 +76,36 @@ body {
     color: #ABABAB;
 }
 
-.header-section a {
-    color: #ffffff !important;
-    font-size: 24px;
-    font-weight: 500;
-}
-
-.header-section nav {
+/* Navbar Section */
+nav {
     background-color: #232323;
+    position: sticky !important;
+    top: 0;
+    z-index: 5;
 }
 
 .navbar-brand_custom {
+    display: none;
+}
+
+nav i {
+    font-size: 28px !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+}
+
+.navbar-toggler.collapsed .fa-close {
+    display: none;
+}
+
+.navbar-toggler:not(.collapsed) .fa-close {
+    display: inline;
+}
+
+.navbar-toggler:not(.collapsed) .fa-reorder {
     display: none;
 }
 
@@ -95,6 +113,12 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+nav a {
+    color: #ffffff !important;
+    font-size: 24px;
+    font-weight: 500;
 }
 
 .nav-link_disappear {
@@ -108,6 +132,10 @@ body {
     margin-bottom: 35px;
 }
 
+.about-section p {
+    font-size: 16px;
+}
+
 /* Education Section */
 
 .education-section {
@@ -118,6 +146,15 @@ body {
     font-weight: 600;
     font-size: 36px;
     color: #404040;
+}
+
+.education-section h6 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.education-section p {
+    font-size: 16px;
 }
 
 .grid-wrapper {
@@ -249,14 +286,21 @@ body {
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
 }
 
+.box-wrapper > div {
+    height: 60px;
+}
+
 .what-section .image {
     height: 50px;
+    position: absolute;
+    top: 0;
+    left: 40%;
 }
 
 .image-overlay {
     position: absolute;
     top: -40%;
-    left: 35%;
+    left: 30%;
 }
 
 .image-overlay_top {
@@ -267,14 +311,14 @@ body {
 
 .image-overlay_bottom {
     position: absolute;
-    left: 55%;
-    bottom: -10%;
+    left: 52%;
+    bottom: -5px;
 }
 
 .image-overlay_left {
     position: absolute;
-    left: 40%;
-    bottom: -15%;
+    left: 30%;
+    bottom: -5px;
 }
 
 /* Contact Section */
@@ -322,7 +366,7 @@ body {
 }
 
 .contact-section_right i {
-    font-size: 28px;
+    font-size: 30px;
 }
 
 /* Footer Section */
@@ -355,8 +399,8 @@ body {
         font-size: 50px;
     }
 
-    .header-section nav {
-        position: fixed;
+    nav {
+        position: fixed !important;
         top: 0;
         left: 0;
         right: 0;
@@ -365,8 +409,12 @@ body {
         backdrop-filter: blur(30px);
     }
 
-    .header-section a {
+    nav a {
         font-size: 16px;
+    }
+
+    nav a.active-link {
+        color: #FF0000 !important;
     }
 
     .navbar-brand_custom {
@@ -386,12 +434,24 @@ body {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .caption {
         font-size: 18px;
     }
 
+    .btn {
+        font-size: 12px;
+    }
+
     /* Header Section */
+    .header-section {
+        margin-top: 8rem;
+    }
+
+    .header-section_upper {
+        margin-bottom: 0;
+    }
+
     .header-section_upper-wrapper {
         justify-content: start;
     }
@@ -401,8 +461,7 @@ body {
     }
 
     .header-section_upper img {
-        height: auto;
-        margin-left: -230px;
+        margin-left: -170px;
     }
     .header-section_upper h1 {
         position: absolute;
@@ -411,9 +470,26 @@ body {
         font-size: 48px;
     }
 
+    /* About Section */
+    .about-section {
+        margin-top: 32px;
+    }
+
+    .about-section p {
+        font-size: 12px;
+    }
+
     /* Education Section */
     .education-section h3 {
         font-size: 24px;
+    }
+
+    .education-section h6 {
+        font-size: 14px;
+    }
+
+    .education-section p {
+        font-size: 12px;
     }
 
     .grid-wrapper {
