@@ -34,12 +34,14 @@ nav.navbar{
 }
 nav .navbar-brand{
   color:var(--sec-text-color);
-  font-size: 1.5rem;
+  font-size: 36px;
+  line-height: 43px;
   font-weight: 800;
 }
 nav a{
   color: var(--sec-text-color);
-  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   text-transform: uppercase;
   padding-right: 10px;
 }
@@ -63,16 +65,17 @@ span.navbar-toggler-icon{
   height: 70vh;
 }
 .header-section h1{
-  font-weight: 900;
-  font-size: 4rem;
+  font-weight: 800;
+  font-size: 6rem;
 }
 .header-section h3{
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .header-section p{
-  font-weight: 400;
-  font-size: 1.3rem;
+  font-weight: 500;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .header-content{
   position: relative;
@@ -105,16 +108,23 @@ span.navbar-toggler-icon{
 }
 
 /*Services Section*/
+#services h4{
+  font-size: 2.25rem;
+  line-height: 2.688rem;
+  font-weight: 800;
+}
 .services-item{
   background-color: #FFFAF9;
   color: var(--primary-text-color);
   padding: 28px;
   margin-bottom: 30px;
-  -webkit-box-shadow: 0px 14px 6px 0px rgba(241,241,241,1);
-  -moz-box-shadow: 0px 14px 6px 0px rgba(241,241,241,1);
-  box-shadow: 0px 14px 6px 0px rgba(241,241,241,1);
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
 }
 .services-item p{
+  font-size:1.125rem;
+  line-height: 1.375rem;
   margin-top: 25px;
 }
 
@@ -125,8 +135,13 @@ span.navbar-toggler-icon{
   background-position: center;
   background-repeat: no-repeat;
 }
+#projects h4{
+  font-size: 2.25rem;
+  line-height: 2.688rem;
+  font-weight: 800;
+}
 #projects-text{
-  font-size: 1.2rem;
+  font-size: 1.875rem;
   font-weight: 300;
   margin-bottom: 20px;
 }
@@ -182,12 +197,12 @@ span.navbar-toggler-icon{
   padding-left: 40px;
   padding-right: 40px;
   font-size: 1rem;
+  font-weight: 300;
 }
 #about-red-text{
   color: var(--primary-color);
   font-size: 1.5rem;
   font-weight: 600;
-  padding: 20px 0;
 }
 
 /*Testimonials Section*/
@@ -196,11 +211,19 @@ span.navbar-toggler-icon{
   padding: 50px 60px;
   font-size: 1.2rem;
 }
+#testimonials h4{
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 2.688rem;
+}
 #testimonials img{
   border-radius: 50%;
   margin-bottom: 15px;
   max-width: 180px;
   margin:0 auto;
+}
+#testimonials p{
+  font-size: 1.125rem;
 }
 .testimonial-item{
   background-color: #FFFAF9;
@@ -214,24 +237,40 @@ span.navbar-toggler-icon{
 }
 
 /*Footer*/
-footer .btn{
+footer{
+  background-color: var(--black);
+  color: var(--sec-text-color);
+}
+footer input, textarea{
+  background-color: transparent !important;
+  border-radius: 0 !important;
+}
+footer .btn, #mobile-form .btn{
   background-color: #263238;
   color: #FFFFFF;
   border-radius: 6px;
 }
-footer .btn:hover{
+footer .btn:hover, #mobile-form .btn:hover{
   background-color: transparent;
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
 }
-.footer-brand{
-  color: #263238;
-  font-size: 1.5rem;
+a.footer-brand{
+  color: var(--sec-text-color);
+  font-size: 2.25rem !important;
   font-weight: 800;
 }
-
+#footer h4{
+  font-size:1.125rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#footer p, #footer a{
+  font-size:1.125rem;
+}
 #footer a{
   text-decoration: none;
+  color: var(--sec-text-color);
 }
 #footer a:hover{
   color:var(--primary-color)
@@ -239,6 +278,9 @@ footer .btn:hover{
 ul.social-icons li{
   list-style: none;
   padding-right: 10px;
+}
+ul.social-icons li a{
+  color:var(--sec-text-color);
 }
 ul.social-icons li a:hover{
   color:var(--primary-color)
@@ -283,4 +325,39 @@ ul.social-icons li a:hover{
   #about-red-text{
     font-size: 1rem;
   }
+}
+
+@media only screen and (max-width: 768px){
+  #services h4, #projects h4, #testimonials h4{
+    font-size: 1.25rem;
+  }
+  #services p{
+    font-size: 15px;
+  }
+ footer .col-sm-12{
+   margin-bottom: 10px;
+ }
+ nav .navbar-brand{
+   font-size: 1.25rem;
+ }
+ .header-section h3{
+   font-size: 1.666rem;
+ }
+ .header-section h1{
+   font-size: 3.332rem;
+ }
+ .header-section p{
+   font-size: 1.041rem;
+ }
+ 
+ #projects-text{
+   font-size: 13px;
+   text-align: center;
+ }
+ #footer p, footer a{
+   font-size: 0.983rem;
+ }
+ a.footer-brand{
+ font-size: 1.25rem;
+ }
 }
