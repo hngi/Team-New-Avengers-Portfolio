@@ -31,38 +31,38 @@
                 </div>
             </div>
         </div>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <a class="navbar-brand navbar-brand_custom" href="#">MENU</a>
-                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa fa-reorder text-orange"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav navbar-nav_custom">
-                        <li class="nav-item nav-link_disappear">
-                            <a class="nav-link px-4 text-orange" href="">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-4" href="#about">ABOUT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-4" href="#education">EDUCATION</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-4" href="#portfolio">PORTFOLIO</a>
-                        </li>
-                        <li class="nav-item nav-link_disappear">
-                            <a class="nav-link" href="#what">WHAT I DO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-4" href="#contact">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
     </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand navbar-brand_custom" href="#">MENU</a>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-reorder text-orange"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav navbar-nav_custom">
+                    <li class="nav-item nav-link_disappear">
+                        <a class="nav-link px-4 text-orange" href="">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="#education">EDUCATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="#portfolio">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item nav-link_disappear">
+                        <a class="nav-link" href="#what">WHAT I DO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- About Section -->
     <section class="about-section">
         <div class="container">
@@ -222,17 +222,17 @@
                 <div class="col-md-6 mt-2 card card-body contact-section_right">
                     <img class="d-block mx-auto mb-3" src="./img/contact-avatar.png" alt="avatar" >
                     <h5 class="text-center mb-3">LET'S WORK TOGETHER</h5>
-                    <div class="d-flex justify-content-center">
-                        <div class="bg-white rounded-circle p-2 mx-2">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="d-flex justify-content-center align-items-center bg-white rounded-circle py-1 px-2 mx-2">
                             <a href=""><i class="fa fa-skype text-dark" aria-hidden="true"></i></a>
                         </div>
-                        <div class="bg-white rounded-circle p-2 mx-2">
+                        <div class="d-flex justify-content-center align-items-center bg-white rounded-circle py-1 px-2 mx-2">
                             <a href=""><i class="fa fa-twitter text-dark" aria-hidden="true"></i></a>
                         </div>
-                        <div class="bg-white rounded-circle p-2 mx-2">
+                        <div class="d-flex justify-content-center align-items-center bg-white rounded-circle py-1 px-2 mx-2">
                             <a href=""><i class="fa fa-linkedin text-dark" aria-hidden="true"></i></a>
                         </div>
-                        <div class="bg-white rounded-circle p-2 mx-2">
+                        <div class="d-flex justify-content-center align-items-center bg-white rounded-circle py-1 px-2 mx-2">
                             <a href=""><i class="fa fa-envelope text-dark" aria-hidden="true"></i></a>
                         </div>
                     </div>

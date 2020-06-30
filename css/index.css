@@ -77,14 +77,12 @@ body {
     color: #ABABAB;
 }
 
-.header-section a {
-    color: #ffffff !important;
-    font-size: 24px;
-    font-weight: 500;
-}
-
-.header-section nav {
+/* Navbar Section */
+nav {
     background-color: #232323;
+    position: sticky !important;
+    top: 0;
+    z-index: 5;
 }
 
 .navbar-brand_custom {
@@ -95,6 +93,12 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+nav a {
+    color: #ffffff !important;
+    font-size: 24px;
+    font-weight: 500;
 }
 
 .nav-link_disappear {
@@ -355,8 +359,8 @@ body {
         font-size: 50px;
     }
 
-    .header-section nav {
-        position: fixed;
+    nav {
+        position: fixed !important;
         top: 0;
         left: 0;
         right: 0;
@@ -365,7 +369,7 @@ body {
         backdrop-filter: blur(30px);
     }
 
-    .header-section a {
+    nav a {
         font-size: 16px;
     }
 
