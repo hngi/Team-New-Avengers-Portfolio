@@ -122,6 +122,12 @@ header > div{
     background-color: #3D85CC;
     color: #fff;
     font-size: 20px;
+    border: 2px solid #3D85CC;
+}
+.contact-btn:hover, .contact-btn:active{
+    color: #474747;
+    background-color: #f1f1f1;
+    border: 2px solid #3D85CC;
 }
 
 .social-icons{
@@ -168,9 +174,10 @@ section#apps > .app-title{
 .app-title span{
     padding: 0 10px;
     font-weight: bold;
+    color: #898989;
 }
-.app-title span:last-of-type{
-    color: #858585;
+.active-type{
+    color: black!important;
 }
 
 .container > div{
@@ -240,7 +247,7 @@ section#apps > .app-title{
     font-size: 12px;
 }
 .option{
-    width: 8px;
+    width: 6px;
     content: url("../images/option.svg");
 }
 
@@ -321,6 +328,11 @@ section#apps > .app-title{
 .card .card-details{
     background-color: #fff;
     border-radius: 0 0 30px 30px;
+}
+.read-card{
+    padding: 5px 10px;
+    border: 1px solid #474747;
+    border-radius: 10px;
 }
 .more-content{
     text-align: center;
