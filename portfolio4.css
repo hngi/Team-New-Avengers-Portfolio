@@ -129,17 +129,20 @@ body{
 }
 .intro-img{
     width: 585px;
-    height: 680px;
+    height: 620px;
     margin-bottom: 1rem;
 }
 .intro-body{
-    padding-top: 14rem;
-    padding-left: 1rem;
+    margin-top: 14rem;
+}
+.intro-wrap {
+    position: relative;
 }
 .intro-text{
     position: absolute;
     color: #fff;
     font-family: 'Lato', sans-serif;
+    /* z-index: 999; */
 }
 .intro-text h3 {
     font-family: Lato;
@@ -173,6 +176,9 @@ body{
     color: whitesmoke;
     box-shadow: 1px 1px 3px #fff;
 }
+.text-slider-items{
+    display: none;
+}
 
 
 
@@ -185,6 +191,14 @@ body{
     margin-right: 0;
     margin-left: 0;
 }
+/* .about-box {
+    width: 426.25px;
+    height: 583.05px;
+    position: relative;
+} */
+.about-para{
+    position: relative;
+}
 .about-para p{
     font-family: Raleway;
     font-size: 16px;
@@ -193,18 +207,19 @@ body{
     color: #FFFFFF;
 }
 .orange-box{
-    position: absolute;
-    width: 426px;
-    height: 500px;
-    left: -39px;
-    bottom: 39px;
+    position: relative;
+    width: 26rem;
+    height: 30rem;
     background: #FF7A00;
     z-index: -1;
 }
 .about-img{
-    width: 426.25px;
-    height: 500px;
+    width: 26rem;
+    height: 30rem;
     z-index: 999;
+    left: 10%;
+    bottom: -5%;
+    position: absolute;
 }
 .progress {
     width: 90px;
@@ -285,10 +300,12 @@ body{
       border-color: #FF7A00;
 }
 .progress-wrapper {
-    position: absolute;
-    bottom: -27rem;
-    right: 5rem;
+    position: relative;
     font-family: Lato;
+}
+.progress-container {
+    position: absolute;
+    top: -20rem;
 }
 .push{
     /* margin: 0 0 0 4.5rem; */
@@ -311,16 +328,25 @@ body{
     justify-content: center;
     margin: 0 auto;
 }
-
+.fifth{
+    margin-left: auto;
+}
+.seventh {
+    margin-right: auto;
+}
 
 
 
 /*------------------------------------------- My Services-----------------------------------*/
 #service{
     background:  #212121;
-    padding: 4rem 0 3rem 0;
+    padding: 3rem 0 2rem 0;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 0;
+}
+.serv{
+    padding: .5rem 1.5rem;
 }
 .service-box {
     justify-content: center;
@@ -330,7 +356,7 @@ body{
     box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.25);
     border-radius: 6px;
     margin-bottom: 2rem;
-    padding: 0 .5rem;
+    padding: 0 1rem;
 }
 .service-box h4 {
     font-family: Lato;
@@ -375,21 +401,56 @@ body{
     padding: 4rem 0 3rem 0;
     margin-left: 0;
     margin-right: 0;
+    margin-top: 0;
 }
 .works-img{
-    background-size: contain;
     box-shadow: 0px 6px 45px rgba(0, 0, 0, 0.25);
+    height: inherit;
+    width:inherit;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+.works-img:hover{
+    transform: scale(1.05);
+}
+.works-box{
     height: 327px;
+    overflow: hidden;
     width:100%;
     margin-bottom: 2rem;
+    position: relative;
 }
+.a-img{
+    box-shadow: 0px 6px 45px rgba(0, 0, 0, 0.25);
+    height: 650px;
+    width:inherit;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+} 
+.a-box{
+    height: 327px;
+    overflow: hidden;
+    width:100%;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.a-img:hover{
+    transform: scale(1.05);
+}
+.works-view {
+    position: absolute;
+    bottom: 1rem;
+    left: 88%;
+    color: #FF7A00;
+}
+
 
 
 
 /*----------------------------------------Contact Me------------------------------------*/
 #contact{
     background:  #212121;
-    padding: 4rem 0 3rem 0;
+    padding: 2rem 0 3rem 0;
 }
 .contact-link {
     font-family: Raleway;
@@ -408,10 +469,10 @@ body{
     border-radius: 0;
     margin-bottom: 2rem;
     height: 3.5rem;
-    color: #aaa;
+    color: #C4C4C4;
 }
 .text-light{
-    color: #aaa;
+    color: #C4C4C4;
 }
 .contact-form:focus{
     box-shadow: none;
@@ -434,35 +495,16 @@ body{
 
 
   /*------------------------------------- Media Queries ---------------------------------*/
-@media(max-width: 1440px){
-    .progress-wrapper {
+@media(max-width: 1200px){
+    .progress-container {
         position: absolute;
-        top: 65rem;
-        right: 5rem;
-    }    
-}
-@media(max-width: 1280px){
-    .progress-wrapper {
-        position: absolute;
-        top: 65rem;
-        right: 5rem;
-    }    
-}
-@media(max-width: 1024px){
-    .progress-wrapper {
-        position: absolute;
-        bottom: -5rem;
-        right: 5rem;
-    }    
-}
-@media(max-width: 1100px){
-    .intro-text{
-        left: 2rem;
+        top: -19rem;
     }
+    
 }
 @media(max-width: 992px){
     .intro-text{
-        margin-top: 7rem;
+        margin-top: 3rem;
     }
     .progress {
         width: 66px;
@@ -473,16 +515,19 @@ body{
     .progress .progress-value {
         font-size: 18px;
     }
-}
-@media(max-width : 768px) {
-    .progress-wrapper {
+    .progress-container {
         position: absolute;
-        top: 68rem;
-        right: 5rem;
-        font-family: Lato;
-    }        
+        top: -16.5rem;
+    }
+
+
 }
 @media(max-width : 767px) {
+    .progress-container {
+        position: initial;
+        margin-top: 3rem;
+    }
+
     .def-navbar .navbar-nav li{
         margin: 2rem auto 1rem auto;
     }
@@ -493,10 +538,6 @@ body{
     }
     .def-navbar .navbar-nav li:last-child{
         margin-bottom: 17rem;
-    }
-    .progress-wrapper {
-        position: initial ;
-        margin-top: 3rem;
     }
     .def-btn{
         width: 143px;
@@ -509,24 +550,28 @@ body{
         line-height: 36px;
         letter-spacing: .03rem;
     }
-    .orange-box{
-        position: absolute;
-        width: 220.52px;
-        height: 250.41px;
-        left: -20px;
-        bottom: 68px;
-    }
-    .about-img{
-        width: 220.52px;
-        height: 250.41px;
-    }
-    
+    #works {
+        background: #212121;
+        margin-top: 0;
+    }    
     
 }
+@media(max-width : 576px) {
+    .seventh{
+        margin: 0 auto;
+    }
+}
 @media(max-width : 517px) {
-    .intro-body{
-        padding-top: 5rem;
-        padding-left: 1rem;
+    .intro-text{
+        margin-top: 2rem;
+    }
+    .intro-text h3 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .contact-link {
+        font-size: 16px;
+        line-height: 19px;
     }    
     .intro-img{
         width: 585px;
@@ -546,15 +591,19 @@ body{
         line-height: 14px;
     }
     .orange-box{
-        position: absolute;
-        width: 165.52px;
-        height: 226.41px;
-        left: -39px;
-        bottom: 39px;
+        position: relative;
+        width: 26rem;
+        height: 14rem;
+        background: #FF7A00;
+        z-index: -1;
     }
     .about-img{
-        width: 165.52px;
-        height: 226.41px;
+        width: 20rem;
+        height: 14rem;
+        z-index: 999;
+        left: 11%;
+        top: 1rem;
+        position: absolute;
     }
     .progress .progress-value {
         font-size: 20px;
@@ -571,6 +620,31 @@ body{
     .section-line {
         width: 169px;
     }
+    .works-img{
+        box-shadow: 0px 6px 45px rgba(0, 0, 0, 0.25);
+        height: 289px;
+        width:100%;
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+    } 
+    .a-img{
+        box-shadow: 0px 6px 45px rgba(0, 0, 0, 0.25);
+        height: 289px;
+        width:100%;
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+    } 
+    #footer p{
+        font-family: Raleway;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+    }      
+    .works-view {
+        position: absolute;
+        bottom: 3rem;
+        left: 88%;
+        color: #FF7A00;
+    }
     
-        
 }
