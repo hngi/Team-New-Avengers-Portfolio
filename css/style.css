@@ -1,3 +1,7 @@
+/*font for page */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+
 /*basic css reset*/
 *{
   padding: 0;
@@ -6,7 +10,17 @@
 }
 body{
   min-height: 100vh;
-  background :#fff ;
+  background :#fefefe ;
+  font-family: 'Roboto', sans-serif;
+}
+/*navigation */
+nav{
+  top :0% !important;
+  position:absolute;
+  left:50%;
+ margin-left: -50% !important ;
+  min-width: 100%!important ;
+  height: 4.2rem;
   
 }
 
@@ -14,12 +28,26 @@ body{
 section.hero_section{
   object-fit: cover ;
   background-size: contain ;
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/Iphone6.jpg');
-  background-position: center;
+  background: url('../images/Iphone6.jpg');
+  /*background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/Iphone6.jpg');
+  */background-position: center;
   background-repeat: no-repeat;
-  height: 70vh;
+  height:85vh;
   overflow: hidden;
- 
+}
+section.hero_section::after{
+  content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%!important ;
+    height: 85vh;
+    background-image: linear-gradient(120deg, rgba(0,0,0,0.6 ), rgba(0,0,0,0.7 )), url("../images/Group 59.png");
+    opacity: .7;
+    margin:0;
+}
+section.hero_section > *{
+  z-index: 12;
 }
 p.hero_header{
   font-size: 1.85rem;
@@ -28,7 +56,9 @@ p.hero_header{
 div.hero_btn-holder{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
+  justify-content: space-evenly;
+  grid-gap: 1rem !important;
+  max-width:20rem !important ;
 }
 button.hero_btn-portfolio,
 button.hero_btn-hire,
@@ -61,6 +91,11 @@ color :#fff!important ;
 background :#555 !important ;
 
 }
+img.pm{
+  min-width :18rem!important ;
+  max-width:22rem ;
+  height :auto ;
+}
 section.about,
 section.projects,
 section.testimonials,
@@ -72,15 +107,42 @@ section#skills,
 div.remove{
     display:none !important;
 }
+input,
+textarea{
+  border-radius :30px!important ;
+  border :2px solid #c4c4c4 !important ;
+  background: transparent!important ;
+}
+input{
+  height :3.2rem!important;
+}
+textarea{
+  height :13rem!important ;
+}
+div.btn{
+  width:1000%;
+  margin:0 auto; 
+}
 
 /*MEDIA QUERIES */
-
+@media (min-width:468px){
+  section.hero_section::after{
+  
+    width: 480%;
+    height: 85vh;
+}
+}
+@media (min-width :576px){
+  img.pm{
+  max-width:22rem ;
+  height :auto ;
+  }
+}
 /*for tablet*/
 @media (min-width:768px ){
 body{
   min-height: 100vh;
-  background :#e5e5e5 ;
-  
+  background :#fefefe ;
 }
 section.about,
 section.projects,
@@ -93,12 +155,13 @@ section#skills{
 }
 
 section.hero_section{
-  height:60rem;
+  height:30rem;
   overflow: hidden;
   position  :relative ;
+  margin-bottom: 0!important ;
 }
 div.main_header{
-  top :5% !important;
+  top :1% !important;
   position:absolute;
   left:50%;
  margin-left: -30% !important ;
@@ -108,27 +171,29 @@ div.main_header{
 }
 div.hero_content,
 div.hero_btn-holder{
-    margin-left: 8rem !important;
+    margin-left: 4rem !important;
+    margin-right: auto !important;
 }
+div.hero_content{
+  margin-top: 5rem!important ;
+}
+
 p.hero_header{
   text-align: left !important;
+  margin-left: 2rem !important;
 }
 section.m-about,
 section.m-projects,
 section.m-testimonials,
-.mme{
-    display:none;
+.mme,
+nav{
+    display:none!important ;
 }
-section.about{
-    position: absolute;
-    top:65%;
-    width: 70%;
-    left:50%;
-    margin-left: -35%;
-    background: #fff;
-    height:auto;
-    z-index: 20;
-}
+/*section.about{
+    border: 1px solid #02507F ;
+    width:100%;
+    margin :0;
+}*/
 img.about_model{
   width :8rem;
   height :auto ;
@@ -161,13 +226,37 @@ div.carousel{
   padding: 5rem 0;
 }
 
-
-a.tme img{
- width :4rem;
- height: auto ;
+a.tme {
+ width :8rem;
+ height: 8rem ;
+ box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.06);
 }
+a.tme img{
+    width :4rem;
+    height: 4rem ;
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem 0;
+    
+   }
 section#skills{
  display:one!important ;
+}
+input,
+textarea{
+  border-radius :1rempx!important ;
+  border :2px solid #c4c4c4 !important ;
+  background: transparent!important ;
+}
+input{
+  height :3rem!important;
+}
+textarea{
+  height :13rem!important ;
+}
+div.btn{
+  width:69% ;
+  margin:0 auto; 
 }
 
 }
@@ -180,6 +269,10 @@ section#skills{
 section#skills > p{
  padding-left:5rem !important ;
 }
+div.btn{
+  width:53%!important ;
+  margin:0 auto; 
+}
 
 }
 
@@ -187,15 +280,16 @@ section#skills > p{
 @media (min-width:468px){
   section.hero_section{
     background-position: center !important;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/Iphone-lg.jpg');
+    background:  url('../images/Iphone-lg.jpg');
   }
   }
   
   @media (min-width:992px){
   section.hero_section{
-    object-fit :cover ;
-    background-size: auto;
+    object-fit :fill ;
+    background-position :center ;
+    background-size: cover;
     background-repeat :no-repeat ;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/Iphone-xxl.jpg');
+    background:  url('../images/Iphone-xl.jpg');
   }
-  }
+}
