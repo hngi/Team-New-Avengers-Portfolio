@@ -286,6 +286,10 @@ ul.social-icons li a:hover{
   color:var(--primary-color)
 }
 
+#mobile-form{
+  display: none;
+}
+
 /*Social Icons*/
 .social-icons{
   display: flex;
@@ -324,6 +328,9 @@ ul.social-icons li a:hover{
   }
   #about-red-text{
     font-size: 1rem;
+  }
+  #mobile-form{
+    display: block;
   }
 }
 
