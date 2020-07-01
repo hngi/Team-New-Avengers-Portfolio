@@ -12,14 +12,13 @@ body{
   min-height: 100vh;
   background :#fefefe ;
   font-family: 'Roboto', sans-serif;
-  
 }
 /*navigation */
 nav{
-  top :-22% !important;
+  top :0% !important;
   position:absolute;
   left:50%;
- margin-left: -49% !important ;
+ margin-left: -50% !important ;
   min-width: 100%!important ;
   height: 4.2rem;
   
@@ -93,7 +92,8 @@ background :#555 !important ;
 
 }
 img.pm{
-  max-width:18rem ;
+  min-width :18rem!important ;
+  max-width:22rem ;
   height :auto ;
 }
 section.about,
@@ -107,10 +107,21 @@ section#skills,
 div.remove{
     display:none !important;
 }
-form{
-    border: 1px solid #fff;
-    width: 90% !important;
-    margin: 0 auto;
+input,
+textarea{
+  border-radius :30px!important ;
+  border :2px solid #c4c4c4 !important ;
+  background: transparent!important ;
+}
+input{
+  height :3.2rem!important;
+}
+textarea{
+  height :13rem!important ;
+}
+div.btn{
+  width:1000%;
+  margin:0 auto; 
 }
 
 /*MEDIA QUERIES */
@@ -231,6 +242,22 @@ a.tme img{
 section#skills{
  display:one!important ;
 }
+input,
+textarea{
+  border-radius :1rempx!important ;
+  border :2px solid #c4c4c4 !important ;
+  background: transparent!important ;
+}
+input{
+  height :3rem!important;
+}
+textarea{
+  height :13rem!important ;
+}
+div.btn{
+  width:69% ;
+  margin:0 auto; 
+}
 
 }
 
@@ -241,6 +268,10 @@ section#skills{
 }
 section#skills > p{
  padding-left:5rem !important ;
+}
+div.btn{
+  width:53%!important ;
+  margin:0 auto; 
 }
 
 }
