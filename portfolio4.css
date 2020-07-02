@@ -403,44 +403,26 @@ body{
     margin-right: 0;
     margin-top: 0;
 }
-.works-img{
-    box-shadow: 0px 6px 45px rgba(0, 0, 0, 0.25);
-    height: inherit;
-    width:inherit;
-    transition: all .5s ease-in-out;
-    cursor: pointer;
-}
-.works-img:hover{
-    transform: scale(1.05);
-}
 .works-box{
-    height: 327px;
     overflow: hidden;
-    width:100%;
+    height: 20.5rem;
+    width: 100%;
+    left: 0;
+    right: 0;
     margin-bottom: 2rem;
     position: relative;
 }
-.a-img{
-    box-shadow: 0px 6px 45px rgba(0, 0, 0, 0.25);
-    height: 650px;
-    width:inherit;
-    transition: all .5s ease-in-out;
-    cursor: pointer;
-} 
-.a-box{
-    height: 327px;
-    overflow: hidden;
-    width:100%;
-    margin-bottom: 2rem;
-    position: relative;
-}
-.a-img:hover{
-    transform: scale(1.05);
+.works-box img {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    object-fit: contain;
 }
 .works-view {
     position: absolute;
     bottom: 1rem;
-    left: 88%;
+    left: 85%;
     color: #FF7A00;
 }
 
@@ -553,7 +535,17 @@ body{
     #works {
         background: #212121;
         margin-top: 0;
-    }    
+    } 
+    .works-box{
+        overflow: hidden;
+        height: 17.9rem;
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin-bottom: 2rem;
+        position: relative;
+    }
+       
     
 }
 @media(max-width : 576px) {
@@ -620,20 +612,13 @@ body{
     .section-line {
         width: 169px;
     }
-    .works-img{
+    /* .works-img{
         box-shadow: 0px 6px 45px rgba(0, 0, 0, 0.25);
         height: 289px;
         width:100%;
         transition: all .5s ease-in-out;
         cursor: pointer;
-    } 
-    .a-img{
-        box-shadow: 0px 6px 45px rgba(0, 0, 0, 0.25);
-        height: 289px;
-        width:100%;
-        transition: all .5s ease-in-out;
-        cursor: pointer;
-    } 
+    }  */
     #footer p{
         font-family: Raleway;
         font-size: 14px;
@@ -642,7 +627,7 @@ body{
     }      
     .works-view {
         position: absolute;
-        bottom: 3rem;
+        bottom: 1rem;
         left: 88%;
         color: #FF7A00;
     }
