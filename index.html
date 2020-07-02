@@ -3,111 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BryanMiller | Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
-    <title>Portfolio</title>
 </head>
 <body>
-    <section class="head">
-        <nav>
-            <div class="logo">
-                <span id="logo"></span>
-                <span>BryanMiller</span>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/nav-logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                <span class="color-blue font-weight-bold">BryanMiller</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNav">
+              <ul class="navbar-nav font-weight-bold">
+                <li class="nav-item active">
+                  <a class="nav-link px-4" href="#about">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link px-4" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link px-4" href="#works">Works</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link px-4" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link px-4" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link mx-5 py-0" href="#contact"><button class="contact-btn">Hire Me</button></a>
+                  </li>
+              </ul>
             </div>
-            <div onclick="toggleMe(this)">
-                <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="#apps">Work</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li class="hire">
-                        <button>Hire Me</button>
-                    </li>
-                </ul>
-                <div class="bars">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-            </div>
-        </nav>
+        </div>
+      </nav>
 
-        <header>
-            <div>
-                <div class="intro">
-                    <div>Hi..</div>
-                    <div class="my-2">I am <span class="color-blue">Bryan</span>.</div>
+    <section class="py-4 header">
+        <div class="container d-flex flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-6 font-weight-bold">
+                <h1 class="display-2 my-4 font-weight-bold">Hi.</h1>
+                <div class="my-4">I am Bryan.</div>
+                <div class="my-4">UI/UX Designer based in Malibu, Carlifonia</div>
+                <div class="my-4 d-flex justify-content-center d-sm-block">
+                    <button class="contact-btn">Contact Me</button>
                 </div>
-                <div>
-                    I enjoy solving problems with beautiful minds like you.
-                    I think I am the catalyst you need to bring that idea to life.
-                </div>
-                <div class="contact-me">
-                    <button class="contact-btn">
-                        Contact Me
-                    </button>
-                </div>
-                <div class="social-icons">
-                    
-                        <span class="be"></span>
-                        <span class="dribbble"></span>
-                        <span class="fb-colored"></span>
-                    
+                <div class="social-icons d-flex justify-content-around d-sm-block">
+                    <span class="be"></span>
+                    <span class="dribbble"></span>
+                    <span class="fb-colored"></span>
                 </div>
             </div>
-
-            <div>
-                <div class="image-container">
-                    <div class="image"></div>
-                </div>
+            <div class="col-12 col-md-6">
+                <img class="profile-photo w-100 py-5" src="images/profile-photo.png" alt="Profile-Photo"/>
             </div>
-        </header>
+        </div>
     </section>
 
-    <section id="apps">
-        <div class="app-title">
-            <span>Apps</span>
-            <span>Website</span>
+    <section id="about" class="py-4">
+        <div class="text-center py-3">
+            <h4>About</h4>
         </div>
-        <div class="container">
-            <div>
-                <div class="card-curry">
-                    <div class="card-details">
-                        <div class="card-title">
-                            <div>Curry 2</div>
-                            <div>Mobile App</div>
-                        </div>
-                        <div class="option"></div>
-                    </div>
+        <div class="container d-md-flex py-3">
+            <div class="col-12 col-md-5 d-flex align-items-center">
+                <img class="w-100 pr-md-5" src="images/photo-1.png" alt="">
+            </div>
+            <div class="col-12 col-md-7 font-weight-bold">
+                <h1 class="color-blue py-2">
+                    For the love of the product, give it the breath of life.
+                    <div>Give it, me.</div>
+                </h1>
+                <div class="py-2 font-weight-light-bold">I am popularly known as Bryan, my birth name, a coincidence I suppose. Started UI/UX Design in 2018 with this air of reluctance but when I was a child I thought like one and as such it is very normal that now, I understand the beauty of solving problems that design has taught me. 
+                    Hopefully you will feel the same when you work with me. I can not wait to get in contact with your awesome self.
                 </div>
-                <div class="card-eirene">
-                    <div class="card-details">
-                        <div class="card-title">
-                            <div>Eirene</div>
-                            <div>Mobile App</div>
+                <div class="py-2 d-flex justify-content-center d-sm-block">
+                    <button class="contact-btn">Hire Me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-4">
+        <div class="text-center py-3">
+            <h4>Education</h4>
+        </div>
+        <div class="container d-md-flex py-3">
+            <div class="col-12 col-md-6">
+                <img class="w-100 pr-md-5" src="images/photo-1.png" alt="">
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="d-flex justify-content-center">
+                    <div class="py-3">
+                        <div class="border-left border-dark pl-3">
+                            <div class="py-2">
+                                <h3 class="font-weight-bold">2017</h3>
+                                <div class="color-blue">
+                                    Louisanna State University
+                                </div>
+                                <div class="font-weight-bold">
+                                    PhD Molecular Biology
+                                </div>
+                            </div>
+                            <div class="py-2">
+                                <h3 class="font-weight-bold">2018</h3>
+                                <div class="color-blue">
+                                    Havard EdX
+                                </div>
+                                <div class="font-weight-bold">
+                                    Principles of Design
+                                </div>
+                            </div>
+                            <div class="py-2">
+                                <h3 class="font-weight-bold">2019</h3>
+                                <div class="color-blue">
+                                    Udacity
+                                </div>
+                                <div class="font-weight-bold">
+                                    Product Design
+                                </div>
+                            </div>
+                            <div class="py-2">
+                                <h3 class="font-weight-bold">2020</h3>
+                                <div class="color-blue">
+                                    HNG Internship
+                                </div>
+                                <div class="font-weight-bold">
+                                    UI/UX
+                                </div>
+                            </div>
                         </div>
-                        <div class="option"></div>
+                        <div>
+                            <div class="py-3">
+                                <button class="contact-btn">Download Resume</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div>
-                <div class="card-imprint">
-                    <div class="card-details">
-                        <div class="card-title">
-                            <div>Imprint</div>
-                            <div>Mobile App</div>
-                        </div>
-                        <div class="option"></div>
+    <section id="portfolio" class="py-4">
+        <div class="text-center py-3">
+            <h4>Portfolio</h4>
+        </div>
+        <div class="container">
+            <div class="row d-block">
+                <div class="d-md-flex justify-content-center py-3">
+                    <div class="app-title">
+                        <span class="px-lg-4 px-md-2 px-sm-1 active-type">All</span>
+                        <span class="px-lg-4 px-md-2 px-sm-1">Web Design</span>
+                        <span class="px-lg-4 px-md-2 px-sm-1">Product Design</span>
+                        <span class="px-lg-4 px-md-2 px-sm-1">Photography</span>
+                        <span class="px-lg-4 px-md-2 px-sm-1">Illustration</span>
                     </div>
                 </div>
-                <div class="card-reverie">
-                    <div class="card-details">
-                        <div class="card-title">
-                            <div>Reverie</div>
-                            <div>Mobile App</div>
-                        </div>
-                        <div class="option"></div>
+    
+                <div class="d-sm-flex justify-content-around py-3">
+                    <div class="col-lg-5 col-md-6 col-sm-6 col-12 py-3">
+                        <img class="w-100" src="images/lights-out.png" alt="">
+                        <div class="pt-2">Before the lights go out</div>
+                        <div class="tag">#Photography</div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-6 col-12 py-3">
+                        <img class="w-100" src="images/book-app.png" alt="">
+                        <div class="pt-2">Before the lights go out</div>
+                        <div class="tag">#Product Design</div>
+                    </div>
+                </div>
+                <div class="d-sm-flex justify-content-around py-3">
+                    <div class="col-lg-5 col-md-6 col-sm-6 col-12 py-3">
+                        <img class="w-100" src="images/cloud-storage.png" alt="">
+                        <div class="pt-2">Before the lights go out</div>
+                        <div class="tag">#Photography</div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-6 col-12 py-3">
+                        <img class="w-100" src="images/e-wallet.png" alt="">
+                        <div class="pt-2">Before the lights go out</div>
+                        <div class="tag">#Product Design</div>
+                    </div>
+                </div>
+                <div class="px-5">
+                    <img class="w-100" src="images/music-app.png" alt="">
+                    <div class="pt-2">Before the lights go out</div>
+                    <div class="tag">#Photography</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="works" class="py-4">
+        <div class="text-center py-3">
+            <h4>Works</h4>
+        </div>
+        <div class="container px-5 px-lg-1 d-lg-flex justify-content-between">
+            <div class="col-lg-3 col-12 text-center my-lg-0 my-md-4 my-4 py-5 bg-color-grey">
+                <div>
+                    <h4 class="font-weight-bold">UI/UX Design</h4>
+                    <div class="text-center py-3">
+                            <span class="d-md-block">I am known for </span>
+                            <span class="d-md-block">giving the much needed</span>
+                            <span class="d-md-block">solutions to </span>
+                            <span class="d-md-block">various problems </span>
+                            <span class="d-md-block">faced in product </span>
+                            <span class="d-md-block">designs.</span>
+                    </div>
+                    <div class="py-2">
+                        <img src="images/pen.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-12 text-center my-lg-0 my-md-4 my-4 py-5 bg-color-grey">
+                <div>
+                    <h4 class="font-weight-bold">UI/UX Design</h4>
+                    <div class="text-center py-3">
+                            <span class="d-md-block">I am known for </span>
+                            <span class="d-md-block">giving the much needed</span>
+                            <span class="d-md-block">solutions to </span>
+                            <span class="d-md-block">various problems </span>
+                            <span class="d-md-block">faced in product </span>
+                            <span class="d-md-block">designs.</span>
+                    </div>
+                    <div class="py-2">
+                        <img src="images/world.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-12 text-center my-lg-0 my-md-4 my-4 py-5 bg-color-grey">
+                <div>
+                    <h4 class="font-weight-bold">UI/UX Design</h4>
+                    <div class="text-center py-3">
+                            <span class="d-md-block">I am known for </span>
+                            <span class="d-md-block">giving the much needed</span>
+                            <span class="d-md-block">solutions to </span>
+                            <span class="d-md-block">various problems </span>
+                            <span class="d-md-block">faced in product </span>
+                            <span class="d-md-block">designs.</span>
+                    </div>
+                    <div class="py-2">
+                        <img src="images/branding.png" alt="">
                     </div>
                 </div>
             </div>
@@ -115,113 +253,138 @@
     </section>
 
     <section id="blog">
-        <hr>
-        <div class="blog-title">
-            Blog
+        <div class="text-center py-3">
+            <h4>Blog</h4>
         </div>
-        <div class="blog-content">
-            <div>
-                <div class="blog-content-message">
-                    <div>
-                        So in my free time I usually write stuff, sometimes they make so much
-                        sense I amaze myself, other times.. 
-                    </div>
-                    <div>
-                        I will leave you to be the judge of my award winning literary prowess
-                    </div>
+        <div class="container px-5 px-lg-1 d-lg-flex justify-content-between">
+            <div class="col-lg-6 col-md-12 col-12 text-center my-lg-0 my-md-4 my-4 py-4 position-relative">
+                <img class="blog-image w-100 rounded-top-d" src="images/beauty.png" alt="">
+                <div class="bg-primary position-absolute top-3 left-3 my-5 p-2 text-white rounded">
+                    <div class="">15</div> 
+                    <div>June </div>
                 </div>
+                <div class="rounded-bottom-d bg-color-grey p-4 font-weight-bold">The Beauty that is Singapore.</div>
             </div>
-            <div>
-                <div class="newsletter">
-                    <div class="email"> 
-                        <div>
-                            <input type="email" placeholder="youremail@someemail.com">
-                        </div>
-                    </div>
-                    <div class="subscribe">
-                        <div>
-                            <button>Subscribe</button>
-                        </div>
-                    </div>
+            <div class="col-lg-6 col-md-12 col-12 text-center my-lg-0 my-md-4 my-4 py-4 position-relative">
+                <img class="blog-image w-100 rounded-top-d" src="images/beyond.png" alt="">
+                <div class="bg-primary position-absolute top-3 left-3 my-5 p-2 text-white rounded">
+                    <div class="">15</div> 
+                    <div>June </div>
                 </div>
-            </div>
-            <hr>
-            <div>
-                <div class="card">
-                    <div class="card-image-daily"></div>
-                    <div class="card-details">
-                        <div class="card-title">
-                            <div>Daily Lives of developers</div>
-                            <div>Mobile App</div>
-                        </div>
-                        <div>Read</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-image-design"></div>
-                    <div class="card-details">
-                        <div class="card-title">
-                            <div>Daily Lives of developers</div>
-                            <div>Mobile App</div>
-                        </div>
-                        <div>Read</div>
-                    </div>
-                </div>
+                <div class="rounded-bottom-d bg-color-grey p-4 font-weight-bold">You can always go beyond.</div>
             </div>
         </div>
-        <div class="more-content">
-            <button>LOAD MORE</button>
+        <div class="container px-5 px-lg-1 d-lg-flex justify-content-between">
+            <div class="col-lg-6 col-md-12 col-12 text-center my-lg-0 my-md-4 my-4 py-4 position-relative">
+                <img class="blog-image w-100 rounded-top-d" src="images/productivity.png" alt="">
+                <div class="bg-primary position-absolute top-3 left-3 my-5 p-2 text-white rounded">
+                    <div class="">15</div> 
+                    <div>June </div>
+                </div>
+                <div class="rounded-bottom-d bg-color-grey p-4 font-weight-bold">Improving productivity.</div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12 text-center my-lg-0 my-md-4 my-4 py-4 position-relative">
+                <img class="blog-image w-100 rounded-top-d" src="images/workspace.png" alt="">
+                <div class="bg-primary position-absolute top-3 left-3 my-5 p-2 text-white rounded">
+                    <div class="">15</div> 
+                    <div>June </div>
+                </div>
+                <div class="rounded-bottom-d bg-color-grey p-4 font-weight-bold">The Man. The Workspace.</div>
+            </div>
         </div>
     </section>
 
-    <section id="stories">
-        <div>
-            <div class="w-40 w-100 my-md-2">
-                <div class="ceo-photo"></div>
+    <section class="mb-5" id="contact">
+        <div class="text-center py-3">
+            <h4>Contact</h4>
+        </div>
+        <div class="container">
+            <div class="d-flex flex-column-reverse flex-lg-row">
+                <div class="col-lg-6 col-12 bg-color-grey px-5">
+                    <form class="pt-5">
+                        <div class="color-blue">
+                            <h3>Reach out to me!</h3>
+                        </div>
+                        <div class="form-group py-4">
+                          <label for="exampleInputEmail1">Name</label>
+                          <input type="email" class="form-control rounded-0 border-bottom bg-color-grey" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group py-4">
+                          <label for="exampleInputPassword1">Email</label>
+                          <input type="password" class="form-control rounded-0 border-bottom bg-color-grey" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-group py-4">
+                            <label for="exampleInputPassword1">Message</label>
+                            <textarea class="form-control rounded-0 border-bottom bg-color-grey" ></textarea>
+                          </div>
+                        <div class="text-center py-4">
+                            <button type="submit" class="btn bg-color-blue px-4 py-2">Send</button>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="col-lg-6 col-12 px-0 w-100">
+                    <!-- <img class="w-100" src="images/map.png" alt=""> -->
+                    <div class="img w-100 h-100"></div>
+                </div>
             </div>
-            <div class="w-60 w-100 my-md-2">
+        </div>
+    </section>
+
+    <footer class="bg-light-deep-blue text-white">
+        <div class="container d-flex flex-lg-row flex-column py-4">
+            <div class="col-lg-3 px-4 d-flex justify-content-center py-3">
                 <div>
-                    "
-                    I am so glad my brand found Bran. His work ethic is nigh impeccable and
-                    I will absolutely recommend him to any startup aroung the globe. 
-                    His work really speaks for him. 
-                     A ten out of ten for me and Imprint
-                    "
+                    <div class="text-center">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <div class="text-center">BryanMiller</div>
+                    <div class="text-center fs-11">All round product designer, geek,father and anime enthusiast.</div>
                 </div>
-                <div class="ceo-name">
-                    <span>Marcus Aurelius, CEO Imprint</span>
+            </div>
+            <div class="col-lg-3 d-flex justify-content-between py-3">
+                <div class="px-4">
+                    <div class="font-weight-bold">Links</div>
+                    <div>About</div>
+                    <div>Portfolio</div>
+                    <div>Works</div>
+                    <div>Blogs</div>
+                    <div>Contact</div>
+                </div>
+                <div class="px-4">
+                    <div class="font-weight-bold">Social</div>
+                    <div>Twitter</div>
+                    <div>Facebook</div>
+                    <div>LinkedIn</div>
+                </div>
+            </div>
+            <div class="col-lg-6 d-md-flex justify-content-center py-3">
+                <div class="p-4">
+                    <div class="font-weight-bold">Services</div>
+                    <div>Branding</div>
+                    <div>Product Design</div>
+                    <div>Software Development</div>
+                </div>
+                <div class="p-4">
+                    <div><span class="phone"></span> +22-2646-112</div>
+                    <div><span class="location"></span> Malibu, CA.</div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <footer id="contact">
-        <div>Contact Me</div>
-        <div class="fw-bold py-1 fs-22">
-            <div>Let us create amazing <br> products</div>
-        </div>
-        <div>
-            That idea will not birth itself <br>
-            It needs you to take the first step <br>
-            and reach out to someone well <br>
-            versed in the arts of creation. <br>
-            I am that someone
-        </div>
-        <div class="just-center py-1    ">
-            <div class="image size-small"></div>
-        </div>
-        <div class="social-icons-2">
-            <div>
-                <span class="phone"></span>
-                <span class="facebook"></span>
-                <span class="twitter"></span>
-                <span class="mail"></span>
+        <div class="bg-deep-blue py-4">
+            <div class="container d-flex justify-content-between">
+                <div class="font-weight-bold"><span class="font-weight-bold fs-20">&copy;</span> BryanMiller</div>
+                <div class="d-flex align-items-center">
+                    <span class="px-lg-5 px-3">Terms & Conditions</span>
+                    <span class="px-lg-5 px-3">Privacy Policy</span>
+                </div>
             </div>
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
-

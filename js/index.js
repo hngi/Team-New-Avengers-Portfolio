@@ -1,5 +1,18 @@
-function toggleMe(x) {
-    if(window.innerWidth <= 768){
-        x.classList.toggle("change");
+document.addEventListener("click", e => {
+    if(e.target.parentNode.className == "app-title"){
+        for(let i = 0; i < e.target.parentNode.children.length; i++){
+            if(e.target == e.target.parentNode.children[i]){
+                e.target.classList.add('active-type');
+            }else{
+                e.target.parentNode.children[i].classList.remove('active-type');
+            }
+        }
+        // if(e.target.parentNode.children[0] == e.target){
+        //     e.target.parentNode.children[1].classList = "";
+        //     e.target.parentNode.children[0].classList = "active-type";
+        // }else if(e.target.parentNode.children[1] == e.target){
+        //     e.target.parentNode.children[0].classList = "";
+        //     e.target.parentNode.children[1].classList = "active-type";
+        // }
     }
-  }
+});
