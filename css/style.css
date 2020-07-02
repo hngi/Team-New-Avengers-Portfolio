@@ -41,7 +41,7 @@ section.hero_section::after{
     top: 0;
     left: 0%;
     width: 100%!important ;
-    height: 85vh;
+    height: 85vh !important;
     background-image: linear-gradient(120deg, rgba(0,0,0,0.6 ), rgba(0,0,0,0.7 )), url("../images/Group 59.png");
     opacity: .7;
     margin:0;
@@ -129,7 +129,7 @@ div.btn{
   section.hero_section::after{
   
     width: 480%;
-    height: 85vh;
+    height: 100%;
 }
 }
 @media (min-width :576px){
@@ -140,10 +140,7 @@ div.btn{
 }
 /*for tablet*/
 @media (min-width:768px ){
-body{
-  min-height: 100vh;
-  background :#fefefe ;
-}
+
 section.about,
 section.projects,
 section.testimonials,
@@ -155,7 +152,7 @@ section#skills{
 }
 
 section.hero_section{
-  height:30rem;
+  height:40rem;
   overflow: hidden;
   position  :relative ;
   margin-bottom: 0!important ;
@@ -173,6 +170,9 @@ div.hero_content,
 div.hero_btn-holder{
     margin-left: 4rem !important;
     margin-right: auto !important;
+}
+div.hero_btn-holder{
+  margin-top: 0 !important;
 }
 div.hero_content{
   margin-top: 5rem!important ;
@@ -219,7 +219,7 @@ div.service1{
     line-height: 0.9;
 }
 div.service1 img{
-    width: 3rem;
+    width: 2.7rem;
     height: auto;
 }
 div.carousel{
@@ -244,38 +244,64 @@ section#skills{
 }
 input,
 textarea{
-  border-radius :1rempx!important ;
+  border-radius :1rem!important ;
   border :2px solid #c4c4c4 !important ;
   background: transparent!important ;
 }
 input{
-  height :3rem!important;
+  height :50px!important;
 }
 textarea{
   height :13rem!important ;
 }
 div.btn{
-  width:69% ;
+  width:70% ;
   margin:0 auto; 
 }
+
 
 }
 
 /*larger screens */
-@media (min-width :997px){
+@media (min-width :992px){
+  section.hero_section::after{
+  
+    width: 480%;
+    min-height: 100% !important;
+}
 section#skills{
   display :block !important ;
 }
+
 section#skills > p{
  padding-left:5rem !important ;
 }
 div.btn{
-  width:53%!important ;
+  width:62%!important ;
   margin:0 auto; 
 }
-
+div.hero_content,
+div.hero_btn-holder{
+    margin-left: 6rem !important;
 }
 
+p.hero_header{
+  margin-left: 3rem !important;
+}
+}
+
+/*larest screens*/
+@media (min-width:1200px){
+  div.hero_content,
+div.hero_btn-holder{
+    margin-left: 10rem !important;
+}
+p.hero_header{
+  margin-left: 5rem !important;
+}div.btn{
+  width:54%!important;
+}
+}
 /*background images */
 @media (min-width:468px){
   section.hero_section{
