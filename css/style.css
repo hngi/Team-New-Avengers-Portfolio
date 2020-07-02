@@ -11,6 +11,7 @@
 body{
   min-height: 100vh;
   background :#fefefe ;
+  width: 766px!important ;
   font-family: 'Roboto', sans-serif;
 }
 /*navigation */
@@ -219,7 +220,7 @@ div.service1{
     line-height: 0.9;
 }
 div.service1 img{
-    width: 3rem;
+    width: 2.7rem;
     height: auto;
 }
 div.carousel{
@@ -244,18 +245,18 @@ section#skills{
 }
 input,
 textarea{
-  border-radius :1rempx!important ;
+  border-radius :1rem!important ;
   border :2px solid #c4c4c4 !important ;
   background: transparent!important ;
 }
 input{
-  height :3rem!important;
+  height :50px!important;
 }
 textarea{
   height :13rem!important ;
 }
 div.btn{
-  width:69% ;
+  width:62% ;
   margin:0 auto; 
 }
 
