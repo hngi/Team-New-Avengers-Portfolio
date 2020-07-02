@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #0e100f;
+  background-color: #000000;
 }
 
 .container {
@@ -18,7 +18,9 @@ body {
 }
 
 nav {
-  font-weight: bold;
+  font-weight: normal;
+  -webkit-box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
 }
 
 nav .navbar-brand {
@@ -42,13 +44,7 @@ nav .nav-link.active {
 }
 
 .bg-light {
-  background-color: #0f1211 !important;
-}
-
-@media screen and (min-width: 768px) {
-  nav {
-    position: static !important;
-  }
+  background-color: #0e100f !important;
 }
 
 #welcome {
@@ -451,6 +447,10 @@ nav .nav-link.active {
   }
 }
 
+#get-in-touch {
+  background: #0e100f;
+}
+
 #get-in-touch .get-in-touch {
   width: 71%;
 }
@@ -475,12 +475,12 @@ nav .nav-link.active {
 }
 
 #get-in-touch .get-in-touch-form__input {
-  background: #000000;
+  background: #0e100f;
   color: #ffffff;
 }
 
 #get-in-touch .get-in-touch-form__message {
-  background: #000000;
+  background: #0e100f;
   color: #ffffff;
   height: 13rem !important;
 }
@@ -601,12 +601,12 @@ footer .footer-copyright {
   }
   footer .guitar {
     position: absolute;
-    top: 65px;
+    top: 150px;
     left: 0;
   }
   footer .guitar-line {
     position: absolute;
-    bottom: 155px;
+    bottom: 58px;
     left: 63px;
   }
 }
