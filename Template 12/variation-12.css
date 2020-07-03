@@ -1,0 +1,588 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #0e100f;
+    color: white !important;
+}
+div.container {
+    overflow-x: hidden;
+}
+section.nav-bar {
+    background: #0e100f;
+}
+section.nav-bar .navbar {
+    margin-left: 108px;
+    margin-right: 114px;
+}
+.navbar-dark .navbar-toggler {
+    border: none;
+}
+section.nav-bar .navbar-brand {
+    font-size: 1.25rem; /* 20px */
+    line-height: 25px;
+    font-family: "Allura", cursive;
+}
+section.nav-bar .nav-link {
+    color: white !important;
+}
+nav .nav-link:hover {
+    transition: all 0.7s;
+    color: #7e2727 !important;
+}
+section.hero-background {
+    background-image: url(img/hero-background.png);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+}
+.hero-background .hero-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.563rem; /* 25px */
+    line-height: 37px;
+    margin-top: 220px;
+}
+.hero-background .hero-btn {
+    margin-top: 88px;
+    color: black !important;
+}
+.hero-background .hero-btn .contact-me-btn {
+    margin-right: 48px;
+    width: 280px;
+    height: 44px;
+    background: #ffffff;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 1.125rem; /* 18px */
+    line-height: 27px;
+    color: #0e100f;
+    font-family: Poppins;
+}
+.hero-background .hero-btn .contact-me-btn:hover, .submit-btn:hover {
+    transition: all 0.7s;
+    background: transparent;
+    color: white;
+    border: 3px solid #ffffff;
+}
+.hero-background .hero-btn .stream-music-btn {
+    width: 280px;
+    height: 44px;
+    border: 3px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 1.125rem; /* 18px */
+    line-height: 27px;
+    color: #ffffff;
+}
+.hero-background .hero-btn .stream-music-btn:hover{
+    transition: all 0.7s;
+    background: white;
+    color: black;
+}
+section.awards {
+    background-image: url(img/About-me-group.png);
+    background-size: cover;
+    background-position: center;
+    height: 633px;
+}
+.awards .award-card {
+    position: absolute;
+    background: #fafafa;
+    box-shadow: 0px 3px 6px rgba(129, 138, 219, 0.2);
+    padding: 8px 0px 69.47px 22px;
+    margin-top: -84.5px;
+}
+.award-card .award-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.563rem; /* 25px */
+    line-height: 30px;
+    color: #0e100f;
+}
+.award-card .award-img {
+    margin-left: 108px;
+    margin-top: 16.5px;
+}
+.award-card .award-img img {
+    margin-right: 16px;
+}
+.award-card .award-link {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem; /* 16px */
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #0e100f;
+}
+.award-card .award-link:hover {
+    transition: all 0.7s;
+    text-decoration: none;
+    color: #7e2727 !important;
+}
+div.about {
+    margin-top: 220px;
+}
+.about-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.563rem; /* 25px */
+    line-height: 30px;
+    color: #ffffff;
+}
+.awards .music-means {
+    margin-top: 72px;
+}
+.awards .music-means h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem; /* 40px */
+    line-height: 49px;
+    margin-bottom: 32px;
+}
+.awards .music-means .music-means-text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.969rem; /* 15px */
+    line-height: 24px;
+    text-align: left;
+}
+.work {
+    margin-top: 120px;
+}
+.work .work-text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.563rem; /* 25px */
+    line-height: 37px;
+}
+.work .music-album-text {
+    margin-top: 72.5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem; /* 40px */
+    line-height: 49px;
+}
+.other-works {
+    margin-top: 72px;
+}
+.other-works .other-works-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem; /* 40px */
+    line-height: 49px;
+}
+.other-works .other-works-background {
+    margin-top: 43px;
+    background-image: url(img/other-works1.png);
+    background-size: cover;
+    background-position: center;
+    height: 546px;
+}
+.other-works .other-works-background-text {
+    margin-top: 188px;
+}
+.upcoming-shows {
+    background-image: url(img/upcoming-shows.png);
+    background-position: center;
+    background-size: cover;
+    height: 667px;
+    margin-top: 54px;
+    padding-top: 120px;
+    padding-bottom: 54px;
+}
+.upcoming-shows .upcoming-shows-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.563rem; /* 25px */
+    line-height: 30px;
+}
+.upcoming-shows .show {
+    width: 22rem;
+}
+.upcoming-shows .show-card {
+    margin-top: 72.5px;
+}
+.upcoming-shows .card {
+    border: none !important;
+}
+.upcoming-shows .card-body {
+    background-color: #0e100f;
+}
+.upcoming-shows .show-date {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem; /* 16px */
+    line-height: 24px;
+}
+.upcoming-shows .show-location {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem; /* 16px */
+    line-height: 24px;
+}
+section.get-in-touch {
+    padding-top: 120px;
+    padding-bottom: 54px;
+}
+section.get-in-touch .get-in-touch-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.563rem; /* 25px */
+    line-height: 30px;
+}
+section.get-in-touch .form-control {
+    background-color: #0e100f;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+}
+section.get-in-touch label {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem; /* 16px */
+    line-height: 24px;
+}
+section.get-in-touch .form-row {
+    margin-top: 104.5px;
+}
+section.get-in-touch .form-group {
+    margin-bottom: 32px;
+}
+textarea {
+    resize: none;
+}
+section.get-in-touch .submit-btn {
+    background: #ffffff;
+    border-radius: 2px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.125rem; /* 18px */
+    line-height: 27px;
+    width: 60%;
+    color: #0e100f;
+}
+section.get-in-touch .submit-btn:hover {
+    transition: background 0.7s;
+    background: black;
+    border: none;
+    color: white;
+}
+footer {
+    background: #444444;
+    padding-top: 57px;
+    padding-bottom: 15px;
+}
+footer .copyright {
+    margin-top: 32px;
+}
+footer .footer-annhyes {
+    font-family: Allura;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25rem; /* 20px */
+    line-height: 25px;
+}
+
+footer .footer-text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem; /* 16px */
+    line-height: 24px;
+}
+@media only screen and (max-width: 1199px) {
+    .hero-background .hero-btn .contact-me-btn {
+        width: 200px;
+    }
+    .hero-background .hero-btn .stream-music-btn {
+        width: 200px;
+    }
+    .upcoming-shows .show {
+        width: 99%;
+    }
+    footer .footer-annhyes {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    footer .footer-text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    section.nav-bar .navbar {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .hero-background .hero-text {
+        font-size: 18px;
+    }
+    .hero-background .hero-btn .contact-me-btn {
+        margin-right: 20px;
+        width: 180px;
+    }
+    .hero-background .hero-btn .stream-music-btn {
+        width: 180px;
+    }
+    .arrow {
+        width: 370px;
+        height: 19px;
+    }
+    .awards .award-card {
+        padding: 8px 0px 40px 22px;
+        margin-top: -84.5px;
+    }
+    .award-card .award-img {
+        margin-left: 0px;
+    }
+    .award-card .award-img img {
+        margin-right: 10px;
+    }
+    .albulm1,
+    .albulm2,
+    .albulm3,
+    .albulm4,
+    .albulm5,
+    .albulm6,
+    .albulm7,
+    .albulm8 {
+        width: 40%;
+        margin: 5px 5%;
+    }
+    .upcoming-shows .show {
+        width: 100%;
+    }
+    .upcoming-shows .show-date {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .upcoming-shows .show-location {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    footer .footer-annhyes {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    footer .footer-text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .social-tag {
+        height: 18px !important;
+    }
+    .social-tag-2 {
+        height: 18px !important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .nav-bar .nav-item {
+        margin-left: 30px;
+    }
+    section.hero-background {
+        height: 400px;
+    }
+    .hero-background .hero-text {
+        margin-left: 25px;
+        font-size: 20px;
+        margin-top: 80px;
+    }
+    .hero-background .hero-btn {
+        margin-top: 35px;
+        color: black !important;
+    }
+    .hero-background .hero-btn .contact-me-btn {
+        margin-right: 0px;
+        width: 160px;
+        font-size: 16px;
+    }
+    .hero-background .hero-btn .stream-music-btn {
+        width: 160px;
+        font-size: 16px;
+    }
+    .arrow {
+        width: 250px;
+        height: 19px;
+    }
+    section.awards {
+        background-image: url(img/about-group.png);
+    }
+    .awards .award-card {
+        padding: 8px 0px 29px 22px;
+    }
+    .award-card .award-img {
+        margin-left: 20px;
+    }
+    div.about {
+        margin-top: 140px;
+    }
+    div.about .about-text {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .awards .music-means h3 {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    .awards .music-means .music-means-text {
+        font-size: 14px;
+    }
+
+    .awards .music-means {
+        margin-top: 12px;
+    }
+    section.work {
+        margin-top: 52px;
+    }
+    .work .work-text {
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 0px;
+    }
+    .work .music-album-text {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 32px;
+    }
+    .albulm1,
+    .albulm2,
+    .albulm3,
+    .albulm4,
+    .albulm5,
+    .albulm6,
+    .albulm7,
+    .albulm8 {
+        width: 80%;
+        margin-bottom: 30px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .other-works .other-works-text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .other-works .other-works-background {
+        margin-top: 43px;
+        background-image: url(img/other-works-mobile.png);
+        height: 255px;
+    }
+    .upcoming-shows {
+        background-image: url(img/upcoming-shows-mobile.png);
+        height: 870px;
+        margin-top: 54px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .upcoming-shows .upcoming-shows-text {
+        font-size: 15px;
+    }
+    .upcoming-shows .show {
+        width: 16rem;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .upcoming-shows .show-date {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .upcoming-shows .show-location {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .upcoming-shows .show-card {
+        margin-top: 10px;
+    }
+    section.get-in-touch .get-in-touch-text {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    section.get-in-touch .form-row {
+        margin-top: 32px;
+    }
+    section.get-in-touch {
+        padding-top: 22px;
+        padding-bottom: 20px;
+    }
+    section.get-in-touch .submit-btn {
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    footer .footer-annhyes {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    footer .footer-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .social-tag {
+        height: 15px !important;
+    }
+    .social-tag-2 {
+        height: 12px !important;
+    }
+    footer {
+        padding-top: 12px;
+    }
+}
+
+@media (max-width: 425px) and (min-width: 375px) {
+    .award-card .award-img {
+        margin-left: 0px;
+        text-align: center;
+    }
+    .award-card .award-text {
+        padding-top: 100px;
+    }
+    .show {
+        position: relative;
+        left: -13px;
+    }
+    .awards .award-card {
+        padding: 8px 0px 40px 22px;
+    }
+    .award-card .award-img img {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 376px) and (min-width: 361px) {
+    .hero-background .hero-text {
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .show {
+        position: relative;
+        left: -30px;
+    }
+}
+@media (max-width: 354px) {
+    .hero-background .hero-btn .contact-me-btn {
+        margin-bottom: 10px;
+    }
+}
