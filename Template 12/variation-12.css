@@ -28,6 +28,10 @@ section.nav-bar .navbar-brand {
 section.nav-bar .nav-link {
     color: white !important;
 }
+nav .nav-link:hover {
+    transition: all 0.7s;
+    color: #7e2727 !important;
+}
 section.hero-background {
     background-image: url(img/hero-background.png);
     background-size: cover;
@@ -57,6 +61,12 @@ section.hero-background {
     color: #0e100f;
     font-family: Poppins;
 }
+.hero-background .hero-btn .contact-me-btn:hover, .submit-btn:hover {
+    transition: all 0.7s;
+    background: transparent;
+    color: white;
+    border: 3px solid #ffffff;
+}
 .hero-background .hero-btn .stream-music-btn {
     width: 280px;
     height: 44px;
@@ -68,6 +78,11 @@ section.hero-background {
     font-size: 1.125rem; /* 18px */
     line-height: 27px;
     color: #ffffff;
+}
+.hero-background .hero-btn .stream-music-btn:hover{
+    transition: all 0.7s;
+    background: white;
+    color: black;
 }
 section.awards {
     background-image: url(img/About-me-group.png);
@@ -105,6 +120,11 @@ section.awards {
     line-height: 24px;
     text-decoration-line: underline;
     color: #0e100f;
+}
+.award-card .award-link:hover {
+    transition: all 0.7s;
+    text-decoration: none;
+    color: #7e2727 !important;
 }
 div.about {
     margin-top: 220px;
@@ -258,6 +278,12 @@ section.get-in-touch .submit-btn {
     line-height: 27px;
     width: 60%;
     color: #0e100f;
+}
+section.get-in-touch .submit-btn:hover {
+    transition: background 0.7s;
+    background: black;
+    border: none;
+    color: white;
 }
 footer {
     background: #444444;
