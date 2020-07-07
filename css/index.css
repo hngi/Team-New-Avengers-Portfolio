@@ -19,9 +19,6 @@
 .bg-color-grey{
     background-color: #eeeeee;
 }
-.w-100{
-    width: 100%;
-}
 .top-3{
     top: 3rem;
 }
@@ -88,10 +85,11 @@ body{
 .blog-image{
     width: 400px;
 }
-.img{
-    content: url('../images/map.png');
-}
 
+#contact form input.form-control:focus{
+    box-shadow: none;
+    background-color: inherit;
+}
 .phone{
     width: 20px;
     content: url("../images/phone.png");
@@ -101,9 +99,5 @@ body{
     content: url("../images/location.png");
 }
 
-@media (max-width:960px){
-    .img{
-        content: url('../images/map-2.png');
-    }
-}
+
 
