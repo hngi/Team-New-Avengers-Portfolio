@@ -13,8 +13,8 @@ body,html{
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;  
   line-height: 1.5;
-  overflow: auto;
 }
+
 ul{
   list-style: none;
   padding-left: 0;
@@ -25,6 +25,17 @@ html{
 }
 
 /*Navigation Bar*/
+.active a{
+  color: var(--primary-color);
+}
+nav.bg-dark {
+  background:transparent !important;
+  transition:0.75s ease;
+}
+.bg-dark.scrolled {
+  background:#000 !important;
+}
+
 nav.navbar{
   background-color: var(--black);
   padding: 16px 16px;
@@ -55,14 +66,14 @@ span.navbar-toggler-icon{
   padding-left:30px;
 }
 
-/*Haeder Section*/
+/*Header Section*/
 .header-section{
   background-image:url('../images/header-image.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color:#fff;
-  height: 70vh;
+  height: 100vh;
 }
 .header-section h1{
   font-weight: 800;
@@ -236,6 +247,27 @@ span.navbar-toggler-icon{
   background: var(--primary-color) !important;
 }
 
+/*Contact*/
+#page-form #form{
+  width: 70%;
+  margin: 0 auto;
+}
+#page-form h4{
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#page-form .btn{
+  background-color:var(--primary-color);
+  color: #FFFFFF;
+  border-radius: 6px;
+  border: 2px solid var(--primary-color);
+}
+#page-form .btn:hover{
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
 /*Footer*/
 footer{
   background-color: var(--black);
@@ -245,16 +277,7 @@ footer input, textarea{
   background-color: transparent !important;
   border-radius: 0 !important;
 }
-footer .btn, #mobile-form .btn{
-  background-color: #263238;
-  color: #FFFFFF;
-  border-radius: 6px;
-}
-footer .btn:hover, #mobile-form .btn:hover{
-  background-color: transparent;
-  color: var(--primary-color);
-  border: 2px solid var(--primary-color);
-}
+
 a.footer-brand{
   color: var(--sec-text-color);
   font-size: 2.25rem !important;
@@ -286,9 +309,6 @@ ul.social-icons li a:hover{
   color:var(--primary-color)
 }
 
-#mobile-form{
-  display: none;
-}
 
 /*Social Icons*/
 .social-icons{
@@ -331,6 +351,9 @@ ul.social-icons li a:hover{
   }
   #mobile-form{
     display: block;
+  }
+  #page-form #form{
+    width: 100%;
   }
 }
 
