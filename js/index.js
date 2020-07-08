@@ -7,12 +7,5 @@ document.addEventListener("click", e => {
                 e.target.parentNode.children[i].classList.remove('active-type');
             }
         }
-        // if(e.target.parentNode.children[0] == e.target){
-        //     e.target.parentNode.children[1].classList = "";
-        //     e.target.parentNode.children[0].classList = "active-type";
-        // }else if(e.target.parentNode.children[1] == e.target){
-        //     e.target.parentNode.children[0].classList = "";
-        //     e.target.parentNode.children[1].classList = "active-type";
-        // }
     }
 });
